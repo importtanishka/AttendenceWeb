@@ -1,0 +1,64 @@
+<html>
+
+<head>
+
+<title>Attendance Percentage</title>
+
+<style>
+
+body{
+background: linear-gradient(to right,#ff9966,#ff5e62);
+text-align:center;
+font-family: Arial;
+color:white;
+}
+
+table{
+margin:auto;
+background:white;
+color:black;
+border-radius:10px;
+padding:10px;
+}
+
+img{
+margin-top:20px;
+border-radius:15px;
+}
+
+button{
+padding:10px;
+border-radius:10px;
+border:none;
+background:black;
+color:white;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Attendance Percentage 📊</h1>
+
+<br>
+
+{{tables|safe}}
+
+<br>
+
+<h2>Graph View 📈</h2>
+
+<img src="{{url_for('static', filename=graph)}}">
+
+<br><br>
+
+<a href="/">
+<button>Back Home</button>
+</a>
+
+</body>
+
+</html>
