@@ -2,6 +2,9 @@ from flask import Flask, render_template, request
 import pandas as pd
 from datetime import date
 import os
+
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 app = Flask(__name__)
@@ -61,7 +64,6 @@ def percentage():
 
     if os.path.exists("attendance.csv"):
 
-        import matplotlib.pyplot as plt
 
         df = pd.read_csv("attendance.csv")
 
@@ -137,7 +139,6 @@ def graph():
 
         percent = (present/total*100).fillna(0)
 
-        import matplotlib.pyplot as plt
 
         plt.figure(figsize=(10,6))
 
@@ -161,10 +162,3 @@ def graph():
 
     else:
         return "No Data"
-
-
-
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
