@@ -1,0 +1,88 @@
+/* Page background */
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#eef2f7;
+}
+
+
+/* Top bar */
+
+.header{
+background:#1f2937;
+color:white;
+padding:18px;
+text-align:center;
+font-size:26px;
+font-weight:bold;
+}
+
+
+/* Center box */
+
+.container{
+width:400px;
+margin:80px auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0px 8px 20px rgba(0,0,0,0.15);
+text-align:center;
+}
+
+
+/* Buttons */
+
+.buttons a{
+display:block;
+padding:14px;
+margin:12px 0;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-size:18px;
+}
+
+.buttons a:hover{
+background:#1d4ed8;
+}
+
+
+/* Input */
+
+input{
+width:90%;
+padding:12px;
+margin-top:10px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+
+/* Button */
+
+button{
+margin-top:15px;
+padding:12px 25px;
+background:#16a34a;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#15803d;
+}
+
+
+/* Back link */
+
+a{
+text-decoration:none;
+color:#2563eb;
+}
