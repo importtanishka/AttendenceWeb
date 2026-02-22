@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Search Attendance</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:linear-gradient(135deg,#667eea,#764ba2);
+color:white;
+text-align:center;
+}
+
+.container{
+margin-top:80px;
+}
+
+input{
+padding:12px;
+width:250px;
+}
+
+button{
+padding:12px 20px;
+background:#667eea;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.table{
+background:white;
+color:black;
+margin:auto;
+margin-top:30px;
+padding:20px;
+width:60%;
+border-radius:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Search Attendance 🔍</h1>
+
+<div class="container">
+
+<form method="POST">
+
+<input type="text" name="name" placeholder="Enter Name" required>
+
+<br><br>
+
+<button type="submit">Search</button>
+
+</form>
+
+
+{% if tables %}
+
+<div class="table">
+
+{{ tables|safe }}
+
+</div>
+
+{% endif %}
+
+</div>
+
+</body>
+
+</html>
